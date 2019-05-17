@@ -1,0 +1,6 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   <preference for="Magento\Catalog\Block\Product\ProductList\Toolbar" type="PichchDev\CustomSorting\Block\Plugin\Product\ProductList\Toolbar" />
+    <type name="Magento\Catalog\Model\Config">
+       <plugin name="override-config" type="PichchDev\CustomSorting\Model\Plugin\Config" sortOrder="10"/>
+    </type>
+</config>
